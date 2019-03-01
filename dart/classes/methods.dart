@@ -2,8 +2,6 @@
 ///https://www.dartlang.org/guides/language/language-tour#methods
 ///1、实例方法
 ///2、setter 和 getter方法
-///3、抽象方法
-///4、隐式接口
 main() {
   //1、实例方法
   Calculate calculate = Calculate();
@@ -13,7 +11,6 @@ main() {
   Rect rect = Rect(1, 2, 5, 5);
   print(
       "left:${rect.left} , top:${rect.top} , right:${rect.right} , bottom:${rect.bottom}");
-
 }
 
 ///1、实例方法
@@ -41,5 +38,3 @@ class Rect {
   //setter方法
   set bottom(num value) => top = value - height;
 }
-
-
