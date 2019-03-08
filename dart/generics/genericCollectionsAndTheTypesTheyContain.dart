@@ -3,5 +3,5 @@
 main() {
   var names = List<String>();
   names.addAll(['Seth', 'Kathy', 'Lars']);
-  print(names is List<String>); // true
+  print(names is List<String>); // true 可以使用is关键字判断类型<泛型>
 }
