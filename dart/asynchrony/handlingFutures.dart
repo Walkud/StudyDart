@@ -9,6 +9,9 @@ main() {
   dynamic a = "a";
   a = 1;
   print(a); //3
+
+  excution();
+  delayExcution();
 }
 
 ///异步方法
@@ -42,3 +45,32 @@ String lookUpVersionStr() => "2.2";
 
 ///被调用方法
 String throwError() => throw Exception("抛出一个错误");
+
+///Future的学习
+///https://www.jianshu.com/p/a4affde4c8ca
+void excution() {
+  new Future(() => futureTask) //  异步任务的函数
+      .then((m) => "futueTask execute result:$m") //   任务执行完后的子任务
+      .then((m) => m.length) //  其中m为上个任务执行完后的返回的结果
+      .then((m) => printLength(m))
+      .whenComplete(() => whenTaskCompelete()); //  当所有任务完成后的回调函数
+}
+
+int futureTask() {
+  return 21;
+}
+
+void printLength(int length) {
+  print("Text Length:$length");
+}
+
+void whenTaskCompelete() {
+  print("Task Complete");
+}
+
+///Future的延迟执行学习
+///https://www.jianshu.com/p/a4affde4c8ca
+///当需要做动画的时候，不要使用Future，而需要使用animateFrame
+void delayExcution() {
+  new Future.delayed(const Duration(seconds: 1), () => print("Future.delayed"));
+}
