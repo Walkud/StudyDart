@@ -46,6 +46,19 @@ _string() {
   //声明原始字符串，直接在字符串前加字符“r”
   //可以避免“\”的转义作用，在正则表达式里特别有用
   print(r"换行符：\n");
+
+  //使用单引号和双引号创建一个字符串，隐式的使用 + 将字符串相连接
+  var s1 = 'String '
+      'concatenation'
+      " works even over line breaks.";
+
+  //使用 == 运算符 判断两个字符串是否相等
+  print(s1 ==
+      'String concatenation works even over '
+          'line breaks.');
+
+  var s2 = 'The + operator ' + 'works, as well.';
+  print(s2 == 'The + operator works, as well.');
 }
 
 ///数值类型
