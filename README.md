@@ -4,10 +4,10 @@
 
 * [重要概念](#重要概念)
 * [关键字](#关键字)
-* [变量 ( Variables )](#变量%20(%20Variables%20))
+* [变量 ( Variables )](#变量(Variables))
 	* 默认值 ( Default value )
 	* 最终和常量 ( Final and const )
-* [内置类型 ( Built-in types )](内置类型%20(%20Built-in%20types%20))
+* [内置类型 ( Built-in types )](#内置类型(Built-in_types))
 	* numbers ( 数值类型 )
 	* strings (字符串类型)
 	* booleans ( 布尔类型 )
@@ -107,7 +107,7 @@
 ## [变量 ( Variables )](https://www.dartlang.org/guides/language/language-tour#variables)
 	
 
-## [内置类型 ( Built-in types )](https://www.dartlang.org/guides/language/language-tour#built-in-types)
+## [内置类型 ( Built-in_types )](https://www.dartlang.org/guides/language/language-tour#built-in-types)
 
 ## [函数 ( Functions )](https://www.dartlang.org/guides/language/language-tour#functions)
 
