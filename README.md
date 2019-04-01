@@ -1,17 +1,95 @@
-# study_dart
-
-A new Flutter application.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
 # StudyDart
+
+## 目录
+
+* [重要概念](#重要概念)
+* [关键字](#关键字)
+* 变量 ( Variables )
+	* 默认值 ( Default value )
+	* 最终和常量 ( Final and const )
+* 内置类型 ( Built-in types )
+	* numbers ( 数值类型 )
+	* strings (字符串类型)
+	* booleans ( 布尔类型 )
+	* lists ( 列表类型 )
+	* sets ( 唯一无序集合 )
+	* maps ( 键值对集合 )
+	* runes (表情、符号)
+	* symbols (符号)
+* 函数 ( Functions )
+	* 可选参数 ( Optional parameters )
+	* main() 函数 ( The main() function )
+	* 函数作为对象传递 ( Functions as first-class objects )
+	* 匿名函数 ( Anonymous functions )
+	* 作用域 ( Lexical scope )
+	* 闭包 ( Lexical closures )
+	* 测试函数是否相等 ( Testing functions for equality )
+	* 返回值 ( Return values )
+* 操作符 ( Operators )
+	* 分类
+	* 算数运算符 ( Arithmetic operators )
+	* 关系运算符 ( Equality and relational operators )
+	* 类型判断符 ( Type test operators )
+	* 赋值运算符 ( Assignment operators )
+	* 逻辑运算符 ( Logical operators )
+	* 位运算符 ( Bitwise and shift operators )
+	* 条件表达式 ( Conditional expressions )
+	* 级联符 ( Cascade notation )
+	* 其它操作符 ( Other operators )
+* 控制流语句 ( Control flow statements )
+	* 判断语句 ( If and else )
+	* for 循环语句 ( For loops )
+	* while 和 do-while 循环语句 (While and do-while)
+	* 打断和继续语句 ( Break and continue )
+	* 分支语句 ( Switch and case )
+	* 断言语句 ( Assert )
+* 异常处理 ( Exceptions )
+	* 抛出异常 ( Throw )
+	* 捕获异常 ( Catch )
+	* 必然执行 ( Finally )
+* 类
+	* 成员 ( Using class members )
+	* 构造器使用 ( Using constructors )
+	* 获取对象运行时的类型 ( Getting an object’s type )
+	* 实例变量 ( Instance variables )
+	* 构造器声明 ( Constructors )
+	* 方法 ( Methods )
+	* 抽象方法 ( Abstract methods )
+	* 抽象类 ( Abstract classes )
+	* 隐式接口 ( Implicit interfaces )
+	* 扩展类 ( Extending a class )
+	* 枚举类型 ( Enumerated types )
+	* 向类添加功能 ( Adding features to a class: mixins )
+	* 类的变量和方法 ( Class variables and methods )
+* 泛型 ( Generics )
+	* 为什么使用泛型 ( Why use generics? )
+	* 集合使用泛型 ( Using collection literals )
+	* 通用集合及其包含的类型 ( Generic collections and the types they contain )
+	* 泛型类型限制 ( Restricting the parameterized type )
+	* 泛型在方法上的使用 ( Using generic methods )
+* 库和能见度 ( Libraries and visibility )
+	* 使用库 ( Using libraries )
+	* 实现库 ( Implementing libraries )
+* 异步 ( Asynchrony support )
+	* 执行异步 ( Handling Futures )
+	* 声明异步函数 ( Declaring async functions )
+	* 处理流 ( Handling Streams )
+* 生成器 ( Generators )
+	* 同步生成器
+	* 异步生成器
+* 可调用的类 ( Callable classes )
+* 隔离 ( Isolates )
+* 类型定义 ( Typedefs )
+* 元数据 ( Metadata )
+* 注释 ( Comments )
+	* 单行注释 ( Single-line comments )
+	* 多行注释 ( Multi-line comments )
+	* 文档注释 ( Documentation comments )
+
+## 重要概念
+	
+
+## [关键字](https://www.dartlang.org/guides/language/language-tour#keywords)
+
+## [变量 ( Variables )](https://www.dartlang.org/guides/language/language-tour#variables)
+
