@@ -4,10 +4,10 @@
 
 * [重要概念](#重要概念)
 * [关键字](#关键字)
-* 变量 ( Variables )
+* [变量 ( Variables )](#变量)
 	* 默认值 ( Default value )
 	* 最终和常量 ( Final and const )
-* 内置类型 ( Built-in types )
+* [内置类型 ( Built-in types )](内置类型)
 	* numbers ( 数值类型 )
 	* strings (字符串类型)
 	* booleans ( 布尔类型 )
@@ -47,7 +47,7 @@
 	* 抛出异常 ( Throw )
 	* 捕获异常 ( Catch )
 	* 必然执行 ( Finally )
-* 类
+* 类 ( Classes )
 	* 成员 ( Using class members )
 	* 构造器使用 ( Using constructors )
 	* 获取对象运行时的类型 ( Getting an object’s type )
@@ -86,10 +86,54 @@
 	* 多行注释 ( Multi-line comments )
 	* 文档注释 ( Documentation comments )
 
-## 重要概念
-	
+## [重要概念](https://www.dartlang.org/guides/language/language-tour#important-concepts)
 
+* **可以放在变量中的所有内容都以一个对象，包括数字、函数、null 等，每个对象都是一个实例**
+* **Dart 是强类型语言，但你可以类型声明时可选的，因为 Dart 可以推断出类型，如果不需要明确类型，可使用 dynamic 类型**
+* **Dart 支持泛型类型，如：List<int>**
+* **Dart 支持顶级函数(如：main())，以及绑定到类或对象(静态或实例方法)，也可以在函数内创建函数**
+* **Dart 支持顶级变量，以及绑定到类或对象(静态或实例变量)**
+* **Dart 没有访问修饰符(没有像 Java 的 public、private 关键字)，如果标识符以下划线 ( _ ) 开头，则代表为私有的。**
+* **Dart 标识符是以下划线或字符开头，后面紧跟字符或数字的任意组合。**
+* **Dart 同时具有表达式和语句，例如，条件表达式 ? expr1 : expr2 的值为 expr1 或expr2。如果和If-else进行比较，语句通常包含一个或多个表达式，但表达式不能直接包含语句。**
+* **Dart 工具会报告警告和错误，警告仅仅是提示你代码看你不工作，并不会妨碍代码执行；错误在编译时会妨碍代码执行；错误在运行时会引发异常。**
+	
 ## [关键字](https://www.dartlang.org/guides/language/language-tour#keywords)
 
+由于关键字会随着 Dart 的更新而增加或删除，所以这里只放置官网链接。
+
+[关键字](https://www.dartlang.org/guides/language/language-tour#keywords)
+
 ## [变量 ( Variables )](https://www.dartlang.org/guides/language/language-tour#variables)
+	
+
+## [内置类型 ( Built-in types )](https://www.dartlang.org/guides/language/language-tour#built-in-types)
+
+## [函数 ( Functions )](https://www.dartlang.org/guides/language/language-tour#functions)
+
+## [操作符 ( Operators )](https://www.dartlang.org/guides/language/language-tour#operators)
+
+## [控制流语句 ( Control flow statements )](https://www.dartlang.org/guides/language/language-tour#control-flow-statements)
+
+## [异常处理 ( Exceptions )](https://www.dartlang.org/guides/language/language-tour#exceptions)
+
+## [类 ( Classes )](https://www.dartlang.org/guides/language/language-tour#classes)
+
+## [泛型 ( Generics )](https://www.dartlang.org/guides/language/language-tour#generics)
+
+## [库和能见度 ( Libraries and visibility )](https://www.dartlang.org/guides/language/language-tour#libraries-and-visibility)
+
+## [异步 ( Asynchrony support )](https://www.dartlang.org/guides/language/language-tour#asynchrony-support)
+
+## [生成器 ( Generators )](https://www.dartlang.org/guides/language/language-tour#generators)
+
+## [可调用的类 ( Callable classes )](https://www.dartlang.org/guides/language/language-tour#callable-classes)
+
+## [隔离 ( Isolates )](https://www.dartlang.org/guides/language/language-tour#isolates)
+
+## [类型定义 ( Typedefs )](https://www.dartlang.org/guides/language/language-tour#typedefs)
+
+## [元数据 ( Metadata )](https://www.dartlang.org/guides/language/language-tour#metadata)
+
+## [注释 ( Comments )](https://www.dartlang.org/guides/language/language-tour#comments)
 
