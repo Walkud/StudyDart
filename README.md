@@ -4,10 +4,10 @@
 
 * [重要概念](#重要概念)
 * [关键字](#关键字)
-* [变量 ( Variables )](#变量 \(Variables \))
+* [变量 ( Variables )](#变量%20(%20Variables%20))
 	* 默认值 ( Default value )
 	* 最终和常量 ( Final and const )
-* [内置类型 ( Built-in types )](内置类型)
+* [内置类型 ( Built-in types )](内置类型%20(%20Built-in%20types%20))
 	* numbers ( 数值类型 )
 	* strings (字符串类型)
 	* booleans ( 布尔类型 )
