@@ -4,7 +4,7 @@
 
 * [重要概念](#重要概念)
 * [关键字](#关键字)
-* [变量 ( Variables )](#变量 ( Variables ))
+* [变量 ( Variables )](#变量 \(Variables \))
 	* 默认值 ( Default value )
 	* 最终和常量 ( Final and const )
 * [内置类型 ( Built-in types )](内置类型)
