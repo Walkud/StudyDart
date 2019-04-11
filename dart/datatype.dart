@@ -68,10 +68,12 @@ _number() {
   //int是任意长度的整数，double是双精度浮点数
   var hex = 0xFF;
   int _int = 0xFF;
+  num _num = 0xFF;
   double _double = 0xF;
 
   //转换进制
   print("整型转换为16进制：$hex —> 0x${hex.toRadixString(16).toUpperCase()}");
+  print("_int:$_int，_num:$_num,_double:$_double");//打印:_int:255，_num:255,_double:15.0
 }
 
 ///在声明变量的时候，除了var，还可以使用const和final
@@ -182,6 +184,4 @@ _runes(){
 _symbols(){
   #radix;
   #bar;
-
-
 }
