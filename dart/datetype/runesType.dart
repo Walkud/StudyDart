@@ -1,6 +1,8 @@
 /// Dart 中 runes (符文) 就是一些特殊的表情和符号使用 UTF-32 字符编码的字符串，在 Dart 中的字符串使用的是 UTF-16，
 /// 所以要展示这些符文就需要特殊的句法，这个表现形式就是 runes。
 /// https://www.dartlang.org/guides/language/language-tour#runes
+///
+/// 注意：当编码包含英文的时候需要加上{}，为纯数字时，则不需要
 main() {
   //句法一
   var clapping = '\u{1f44f}';
