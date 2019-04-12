@@ -35,5 +35,4 @@ main(){
   print("length:${maps.length}");
   print(maps.isEmpty);//maps 是否为空
   print(maps.runtimeType);//打印 mpas 的类型：_InternalLinkedHashMap<String, String>
-
 }
