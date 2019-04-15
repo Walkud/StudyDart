@@ -6,7 +6,7 @@
 main() {
   const list = const [1, 2, 3];
 
-  list.forEach((item) {
+  list.forEach((item) {//参数形式：([[Type] param1[, …]])
     print("item:$item");
   });
 

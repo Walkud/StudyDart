@@ -1,4 +1,4 @@
-///作用范围，function嵌套
+///作用范围，function 嵌套
 ///"follow the curly braces outwards" 向外跟着花括号查看变量的作用域
 ///https://www.dartlang.org/guides/language/language-tour#lexical-scope
 bool topLevel = true;
@@ -11,14 +11,22 @@ void main() {
     void nestedFunction() {
       var insideNestedFunction = true;
 
-      assert(topLevel);
-      assert(insideMain);
-      assert(insideFunction);
-      assert(insideNestedFunction);
+      print("topLevel:$topLevel");
+      print("insideMain:$insideMain");
+      print("insideFunction:$insideFunction");
+      print("insideNestedFunction:$insideNestedFunction");
     }
 
-//    nestedFunction();
+    print("topLevel:$topLevel");
+    print("insideMain:$insideMain");
+    print("insideFunction:$insideFunction");
+//    print("insideNestedFunction:$insideNestedFunction");//编译错误
+    nestedFunction();
   }
 
-//  myFunction();
+  print("topLevel:$topLevel");
+  print("insideMain:$insideMain");
+//  print("insideFunction:$insideFunction");//编译错误
+//  print("insideNestedFunction:$insideNestedFunction");//编译错误
+  myFunction();
 }

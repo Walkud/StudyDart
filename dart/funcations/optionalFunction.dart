@@ -5,9 +5,12 @@ main() {
   print(isSame(1));
   print(isSameNoReturnType(1));
   print(isSameExpression(1));
-  print(enableFlags(bold: true));
 
-  print(say("Boy", "Hello World!"));
+  //命名可选参数在调用时默认是以参 ”名称:值“ 的形式。这种形式与传参时的顺序无关。
+  nameOptionalParameters(a: true, b: 2);
+
+  //位置可选参数在调用时默认是以 ”名称=值“ 的形式。这种形式会在接受参数时会按顺序赋值。
+  pointOptionalParameters("Dart", "Hello World!","a");
 //  print(say("Boy", "Hello World!","device"));
 
   print(defaultParam("Judy"));
@@ -29,17 +32,14 @@ isSameNoReturnType(int num) {
 ///常用的funcation 声明简写方式，使用 => expr ，这里必须要表达式，如果写if else 编译器会提示错误，可以写 xxx ? x : y 表达式
 bool isSameExpression(int num) => num == 1;
 
-///可选的参数声明
-int enableFlags({bold: true}) {
-  return bold ? 1 : 2;
+///命名可选的参数声明
+nameOptionalParameters({a: true, b: 1, c}) {
+  print("a:$a,b:$b,c:$c");
 }
 
-///可选的参数声明
-String say(String from, String msg, [String device]) {
-  if (device != null) {
-    return "result is $device";
-  }
-  return "$from says $msg";
+///位置可选的参数声明
+pointOptionalParameters(String from, String msg, [String a, int b]) {
+  print("from:$from,msg:$msg,a:$a,b:$b");
 }
 
 ///默认参数值
