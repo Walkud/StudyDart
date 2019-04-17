@@ -4,14 +4,14 @@
 ///   –	Subtract    减运算
 ///   -expr	Unary minus, also known as negation (reverse the sign of the expression)    一元反转表达符号
 ///   *	Multiply    乘运算
-///   /	Divide    除运算 返回double
-///   ~/	Divide, returning an integer result //除运算，返回整数
+///   /	Divide    返回 double 类型
+///   ~/	Divide, returning an integer result 除运算，返回整数
 ///   %	Get the remainder of an integer division (modulo) 模数运算  获取余数
 ///
-///   ++var	var = var + 1 (expression value is var + 1)
-///   var++	var = var + 1 (expression value is var)
-///   --var	var = var – 1 (expression value is var – 1)
-///   var--	var = var – 1 (expression value is var)
+///   ++var	等价于 var = var + 1 (expression value is var + 1)
+///   var++	等价于 var = var + 1 (expression value is var)
+///   --var	等价于 var = var – 1 (expression value is var – 1)
+///   var--	等价于 var = var – 1 (expression value is var)
 
 main() {
   _add();

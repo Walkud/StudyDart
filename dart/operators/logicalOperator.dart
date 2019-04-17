@@ -6,12 +6,13 @@
 ///   &&	logical AND 与运算
 ///
 main(){
-
   bool result1 = true;
   bool result2 = false;
 
-  print(!result1);//非运算 颠倒
-  print(result1 && result2);// 或运算  组合
-  print(result1 || result2);// 与运算  组合
-
+  //非运算 颠倒
+  print(!result1);//打印：false
+  // 或运算  组合
+  print(result1 && result2);//打印：false
+  // 与运算  组合
+  print(result1 || result2);//打印：true
 }

@@ -6,21 +6,17 @@
 main(){
   Object i = 255;
 
-  print((i as int).toRadixString(16).toUpperCase());//使用as 进行类型强转
+  //使用as 进行类型强转
+  print((i as int).toRadixString(16).toUpperCase());//打印：FF
 
   if(i is int){
       //这里使用is 判断类型后，该代码段已经隐式转换了
-      print(i.toRadixString(16).toUpperCase());
+      print(i.toRadixString(16).toUpperCase());//打印：FF
   }
 
-  print(i is int);
-
-  print(i is! String);
-
-
-
+  print(i is int);//打印：true
+  print(i is! String);//打印：true
 
   Object xy = "xy";
 //  print(xy as int);//运行时错误，xy不能强转为int类型，会抛出异常 type 'String' is not a subtype of type 'int' in type cast
-
 }

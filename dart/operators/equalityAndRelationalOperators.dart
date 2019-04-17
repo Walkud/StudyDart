@@ -1,11 +1,11 @@
 ///相等和比较相关的操作符
 ///https://www.dartlang.org/guides/language/language-tour#equality-and-relational-operators
-///   ==	Equal; see discussion below
-///   !=	Not equal
-///   >	Greater than
-///   <	Less than
-///   >=	Greater than or equal to
-///   <=	Less than or equal to
+///   ==	Equal; see discussion below（相等）
+///   !=	Not equal（不相等）
+///   >	Greater than （大于）
+///   <	Less than （小于）
+///   >=	Greater than or equal to （大于等于）
+///   <=	Less than or equal to （小于等于）
 main() {
   //直接Copy官方源码
   assert(2 == 2);

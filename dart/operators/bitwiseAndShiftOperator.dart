@@ -8,25 +8,23 @@
 ///   <<	  Shift left  左位移
 ///   >>	  Shift right 右位移
 main(){
-
   //这段代码Copy自官网
   final value = 0x22;
   final bitmask = 0x0f;
 
-//  assert((value & bitmask) == 0x02); // AND
-//  assert((value & ~bitmask) == 0x20); // AND NOT
-//  assert((value | bitmask) == 0x2f); // OR
-//  assert((value ^ bitmask) == 0x2d); // XOR
-//  assert((value << 4) == 0x220); // Shift left
-//  assert((value >> 4) == 0x02); // Shift right
+  assert((value & bitmask) == 0x02); // AND
+  assert((value & ~bitmask) == 0x20); // AND NOT
+  assert((value | bitmask) == 0x2f); // OR
+  assert((value ^ bitmask) == 0x2d); // XOR
+  assert((value << 4) == 0x220); // Shift left
+  assert((value >> 4) == 0x02); // Shift right
 
   //Copy End Line
 
-  print((bitmask).toRadixString(2));
+  print((bitmask).toRadixString(2));//打印：1111
 
   //一元位补码2进制打印
-  print(value.toRadixString(2));//                100010
-  print((~bitmask).toRadixString(2));//-10000     110000
-  print((value & ~bitmask).toRadixString(2));//   100000
-
+  print(value.toRadixString(2));//打印：100010
+  print((~bitmask).toRadixString(2));//打印：-10000
+  print((value & ~bitmask).toRadixString(2));//打印：100000
 }

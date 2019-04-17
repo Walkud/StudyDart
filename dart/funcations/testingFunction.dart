@@ -27,9 +27,9 @@ void main() {
 
   // These closures refer to the same instance (#2),
   // so they're equal.
-  assert(y.baz == x);
+  assert(y.baz == x);// y.baz 和 x 对比的同一个实例的成员函数，所以相等
 
   // These closures refer to different instances,
   // so they're unequal.
-  assert(v.baz != w.baz);
+  assert(v.baz != w.baz);//v 和 w 引用的实例不同，所以对应的成员函数也不相等
 }
