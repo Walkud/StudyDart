@@ -17,8 +17,8 @@ main() {
   final vv = v + w;
   final ww = v - w;
 
-  print(vv.toString());
-  print(ww.toString());
+  print(vv.toString());//打印：Vector{x: 4, y: 5}
+  print(ww.toString());//打印：Vector{x: 0, y: 1}
 
   assert(v + w == Vector(4, 5));
   assert(v - w == Vector(0, 1));
@@ -49,10 +49,10 @@ class Vector {
 
   Vector(this.x, this.y);
 
-  ///提供实例的 + 运算操作
+  ///重载 + 运算操作符
   Vector operator +(Vector v) => Vector(x + v.x, y + v.y);
 
-  ///提供示例的 - 运算操作
+  ///重载 - 运算操作符
   Vector operator -(Vector v) => Vector(x - v.x, y - v.y);
 
   @override
@@ -60,7 +60,7 @@ class Vector {
     return 'Vector{x: $x, y: $y}';
   }
 
-  /// Operator == and hashCode not shown. For details, see note below.
+  /// 重载 == 运算操作符，重载该操作符同时也应该重写hashCode
   @override
   bool operator ==(other) {
     if (other is! Vector) {
