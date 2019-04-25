@@ -3,7 +3,7 @@
 main() {
   var text = 1;
   var number = 1;
-  var urlString = "http1s://www.dartlang.org";
+  var urlString = "https://www.dartlang.org";
   // Make sure the variable has a non-null value.
   assert(text != null); //断言不能为空，如果为空会抛出异常
 

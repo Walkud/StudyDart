@@ -15,11 +15,12 @@ main() {
       break;
     case 'OPEN':
       print("execute open!");
-      break;
+      return;
     default:
       print("execute default!");
   }
 
+  //使用 continue 的用法
   const type = 1;
   switch (type) {
     case 1:

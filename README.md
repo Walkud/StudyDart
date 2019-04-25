@@ -46,7 +46,7 @@
 	* for 循环语句 ( For loops )
 	* while 和 do-while 循环语句 (While and do-while)
 	* 打断和继续语句 ( Break and continue )
-	* 分支语句 ( Switch and case )
+	* 开关语句 ( Switch and case )
 	* 断言语句 ( Assert )
 * [异常处理 ( Exceptions )](./resource/md/异常处理.md)
 	* 抛出异常 ( Throw )

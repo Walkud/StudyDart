@@ -1,6 +1,6 @@
 ///打断和继续
 ///https://www.dartlang.org/guides/language/language-tour#break-and-continue
-///   break     //打断循环
+///   break     //打断(停止)循环
 ///   continue  //跳过当前循环，继续下一次循环
 main() {
   int i = 0;
