@@ -62,7 +62,7 @@ _rethrowHandle() {
 _rethrow() {
   try {
     throw "抛出一个异常";
-  } catch (e) {
+  } on String catch (e) {//这里的异常类型是 String ，证明了 Dart 支持可抛出非空的任何对象
     print("处理：$e");
     rethrow; //使用 rethrow 重新抛出异常
   }
