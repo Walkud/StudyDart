@@ -52,6 +52,7 @@
 	* 抛出异常 ( Throw )
 	* 捕获异常 ( Catch )
 	* 必然执行 ( Finally )
+	* 自定义异常
 * [类 ( Classes )](./resource/md/类.md)
 	* 成员 ( Using class members )
 	* 构造器使用 ( Using constructors )
