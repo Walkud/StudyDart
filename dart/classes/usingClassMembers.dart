@@ -1,7 +1,6 @@
 import 'dart:math';
 
-///对象有成员由函数和数据(分别为方法和示例变量)组成，可以通过对象示例进行访问
-///使用(.)进行访问
+///对象有成员由函数和数据(分别为方法和示例变量)组成，可以通过对象实例使用 (.) 进行访问
 ///https://www.dartlang.org/guides/language/language-tour#using-class-members
 main() {
   //创建Point对象实例
