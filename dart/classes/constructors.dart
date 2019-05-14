@@ -1,7 +1,7 @@
 ///构造器
 ///https://www.dartlang.org/guides/language/language-tour#constructors
 /// 1、如果自己没有声明构造器，Dart默认提供一个无参构造器，并在默认调用超类无参构造器
-/// 2、Dart支持自命名构造器，提高多构造函数的清晰度，注意：自命名构造函数是不遗传的，即子类无法继承自命名构造函数，需要在子类中实现该函数
+/// 2、Dart支持自命名构造器，提高多构造函数的清晰度。
 /// 3、如果子类存在无参构造器，但父类没有无参构造器，那么子类必须在无参构造器中使用 : super . 或()方式去调用父类的构造器(可以是自命名构造器)
 /// 4、构造函数方法断言，可以用于权限判断，但会抛出异常
 /// 5、重定向构造器使用关键字  : this()
@@ -44,7 +44,7 @@ class Foo {
 
   //简写
   Foo(this.x, this.y);
-
+  //自定义构造器名
   Foo.origin(this.x, this.y);
 
   //参照官方网站,构造器可以使用 : 直接为属性赋值
@@ -63,9 +63,11 @@ class Foo {
 
 //子类
 class Boo extends Foo {
+  //调用超类指定构造器
   Boo(num x, num y) : super(x, y);
 
-  Boo.alongXAxis(num x) : this(x, 0); //使用this重定向构造器
+  //使用this重定向构造器
+  Boo.alongXAxis(num x) : this(x, 0);
 }
 
 //子类，如果子类存在无参构造器，但父类没有无参构造器，那么子类必须在无参构造器中使用 : super . 或()方式去调用父类的构造器(可以是自命名构造器)
@@ -82,6 +84,7 @@ class ImmutablePoint {
 
   final num x, y;
 
+  //声明不可变构造器
   const ImmutablePoint(this.x, this.y);
 }
 

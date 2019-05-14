@@ -3,8 +3,9 @@
 ///1、实例方法
 ///2、setter 和 getter方法
 main() {
-  //1、实例方法
+
   Calculate calculate = Calculate();
+  //调用实例方法
   print(calculate.plus(5, 5));
 
   //2、setter 和 getter方法
