@@ -1,7 +1,7 @@
-///扩展类
+///类继承
 ///https://www.dartlang.org/guides/language/language-tour#extending-a-class
-///1、扩展类,重写方法
-///2、扩展操作符
+///1、类继承,重写方法
+///2、重写操作符
 ///3、应对不存在的方法
 main() {
   //1、扩展类
@@ -43,16 +43,16 @@ class SmartTelevision extends Television {
   }
 }
 
-///扩展操作符 参考官方网站
+///重写操作符 参考官方网站
 class Vector {
   final int x, y;
 
   Vector(this.x, this.y);
 
-  ///重载 + 运算操作符
+  ///重写 + 运算操作符
   Vector operator +(Vector v) => Vector(x + v.x, y + v.y);
 
-  ///重载 - 运算操作符
+  ///重写 - 运算操作符
   Vector operator -(Vector v) => Vector(x - v.x, y - v.y);
 
   @override
@@ -60,7 +60,7 @@ class Vector {
     return 'Vector{x: $x, y: $y}';
   }
 
-  /// 重载 == 运算操作符，重载该操作符同时也应该重写hashCode
+  /// 重写 == 运算操作符，重载该操作符同时也应该重写hashCode
   @override
   bool operator ==(other) {
     if (other is! Vector) {

@@ -1,4 +1,5 @@
 ///隐式接口
+///Dart 的每个类都隐式定义了一个接口，该接口包含了该类的所有实例成员和其实现的接口。
 ///https://www.dartlang.org/guides/language/language-tour#implicit-interfaces
 main() {
 //4、隐式接口

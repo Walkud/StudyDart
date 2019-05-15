@@ -13,8 +13,9 @@ class Queue {
   static const initialCapacity = 16; //声明一个类范围的属性
 }
 
-///静态方法
+
 class CalculatePlus {
+  ///静态方法
   static num plus(int a, int b) {
     return a + b;
   }
