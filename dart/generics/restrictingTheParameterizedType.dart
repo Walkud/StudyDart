@@ -1,12 +1,11 @@
 /// 泛型参数限制 使用extends
 /// https://www.dartlang.org/guides/language/language-tour#generic-collections-and-the-types-they-contain
 main() {
-
   var someBaseFoo = Foo<SomeBaseClass>();
   var extenderFoo = Foo<Extender>();
   var foo = Foo();
 
-//  Foo foo1 = Foo<String>();//ERROR
+//  Foo foo1 = Foo<String>();//编译器报错，泛型类型不匹配
 
   print(someBaseFoo);//打印Foo<SomeBaseClass>
   print(extenderFoo);//打印Foo<Extender>
