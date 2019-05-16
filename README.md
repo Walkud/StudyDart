@@ -69,6 +69,7 @@
 * [泛型 ( Generics )](./resource/md/泛型.md)
 	* 为什么使用泛型 ( Why use generics? )
 	* 集合使用泛型 ( Using collection literals )
+	* 使用带有构造器的参数化类型 ( Using parameterized types with constructors )
 	* 通用集合及其包含的类型 ( Generic collections and the types they contain )
 	* 泛型类型限制 ( Restricting the parameterized type )
 	* 泛型在方法上的使用 ( Using generic methods )
