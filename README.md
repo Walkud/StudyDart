@@ -73,7 +73,7 @@
 	* 通用集合及其包含的类型 ( Generic collections and the types they contain )
 	* 泛型类型限制 ( Restricting the parameterized type )
 	* 泛型在方法上的使用 ( Using generic methods )
-* [库和能见度 ( Libraries and visibility )](./resource/md/库和能见度.md)
+* [库和可见性 ( Libraries and visibility )](./resource/md/库和可见性.md)
 	* 使用库 ( Using libraries )
 	* 实现库 ( Implementing libraries )
 * [异步 ( Asynchrony support )](./resource/md/异步.md)
@@ -93,3 +93,6 @@
 	* 文档注释 ( Documentation comments )
 
 	
+## 参考
+
+[Dart 语言的介绍 (可大致了解 Dart由来)](https://www.yoytang.com/dart-intro.html)
