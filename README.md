@@ -77,9 +77,9 @@
 	* 使用库 ( Using libraries )
 	* 实现库 ( Implementing libraries )
 * [异步 ( Asynchrony support )](./resource/md/异步.md)
-	* 执行异步 ( Handling Futures )
+	* 操作 Future ( Handling Futures )
 	* 声明异步函数 ( Declaring async functions )
-	* 处理流 ( Handling Streams )
+	* 操作 Stream ( Handling Streams )
 * [生成器 ( Generators )](./resource/md/生成器.md)
 	* 同步生成器
 	* 异步生成器
