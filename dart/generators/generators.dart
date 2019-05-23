@@ -51,7 +51,7 @@ Stream<int> asynchronousNaturalsTo(int n) async* {
   int k = 0;
   while (k < n) yield k++;
 
-  print("End");
+  print("End");//并不会打印
 }
 
 ///使用 yield 关键字递归调用生成器，这种方式会出现性能问题
@@ -80,9 +80,8 @@ Iterable naturalsDownFrom(n) sync* {
   }
 }
 
-int count = 0;
-
 ///使用yield*解决性能问题示例
+int count = 3;
 Iterable naturalsDownFrom1(n) sync* {
   count++;
   if (n > 0) {

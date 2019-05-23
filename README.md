@@ -83,6 +83,7 @@
 * [生成器 ( Generators )](./resource/md/生成器.md)
 	* 同步生成器
 	* 异步生成器
+	* 生成器性能问题
 * [可调用的类 ( Callable classes )](./resource/md/可调用的类.md)
 * [隔离 ( Isolates )](./resource/md/隔离.md)
 * [类型定义 ( Typedefs )](./resource/md/类型定义.md)
