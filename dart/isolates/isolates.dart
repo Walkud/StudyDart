@@ -1,7 +1,7 @@
 ///隔离，在Dart中实现并发可以用Isolate，他类似于Java中的Thread,但不共享内存，是一个独立的Dart程序执行环境，有独立的堆和栈
 ///https://www.dartlang.org/guides/language/language-tour#isolates
 ///
-///学习地址：https://ducafecat.tech/2019/01/21/dart/dart-32-isolates/
+///学习地址：http://codingdict.com/article/21938
 import 'dart:async';
 import 'dart:isolate';
 
@@ -9,7 +9,7 @@ main() async {
   var receivePort = new ReceivePort();
   await Isolate.spawn(echo, receivePort.sendPort);
 
-  // first 是 echo 线程的消息入口
+  // first 是 echo 的消息入口
   var sendPort = await receivePort.first;
 
   var msg = await sendReceive(sendPort, "foo");
