@@ -1,4 +1,4 @@
-///Callable classes Dart允许你的类像调函数一样使用，创建的类实现call()方法就可以了
+///Callable classes Dart允许你的类实例像调函数一样使用，创建的类实现call()方法就可以了
 ///https://www.dartlang.org/guides/language/language-tour#callable-classes
 main() {
   var wf = WannabeFunction();
