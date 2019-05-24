@@ -8,9 +8,6 @@ main() {
   print("单行注释");
 }
 
-/*
-  多行注释
- */
 mulitLineComment() {
   /*
     多行注释
@@ -22,7 +19,7 @@ mulitLineComment() {
 documentationComment() {}
 
 /**
- * 文档注释，编译器建议使用///
+ * 文档注释 [msg]，编译器建议使用///
  *
  */
-documentationComment1() {}
+documentationComment1(String msg) {}

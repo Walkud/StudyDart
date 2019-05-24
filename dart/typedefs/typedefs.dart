@@ -1,34 +1,49 @@
 ///类型定义 typedef 关键字目前仅作用域函数类型声明
 ///https://www.dartlang.org/guides/language/language-tour#typedefs
-///在Dart中 函数也是对象，所以，在构造器中，可以直接使用函数作为参数传递
 main() {
   SortedCollection coll = SortedCollection(sort);
-  print(coll.compare is Function); //判断是否为 Function 类型
+  print("coll is Function : ${coll.compare is Function}"); //是否为 Function 类型
 
-  CompareCollection ccoll = CompareCollection(sort);
 
-  print("ccoll is Function : ${ccoll.compare is Function}"); //判断是否为 Function 类型
-//  print("ccoll is  Compare ${ccoll.compare is Compare}"); //判断是否为 Compare 类型   返回 false
-  //通常 typedef 只用来判断函数的类型
-  print("ccoll is  Compare ${ccoll.compare is Compare<int>}"); //判断是否为 Compare 类型   返回 true
+  //使用 typedef关键字去使用显示名称和保留类型信息。
+  CompareSortedCollection csColl = CompareSortedCollection(sort);
+  print("csColl is Function : ${csColl.compare is Function}"); //是否为 Function 类型
+  print("csColl is Compare ${csColl.compare is Compare}"); //是否为 Compare 类型   返回 true
+
+  //使用泛型去检查任何函数类型
+  print("sortInt is Compare<int> ${sortInt is CompareT<int>}"); //是否为 Compare<int> 类型   返回 true
+
+  print("toast is Hello<String> ${toast is Hello<String>}"); //是否为 Hello 类型   返回 true
 }
 
-int sort(int a, int b) => 0;
+int sort(Object a, Object b) => 0;
 
+//未使用 typedef 关键字
 class SortedCollection {
-  Function compare; //分配一个变量保存函数信息
+  Function compare;
 
-  //构造器参数接收一个函数
-  SortedCollection(int f(int a, int b)) {
-    this.compare = f;
+  SortedCollection(int f(Object a, Object b)) {
+    compare = f;
   }
 }
 
-///使用 typedef 关键声明函数类型
-typedef Compare<T> = int Function(T a, T b);
+//使用 typedef 关键字去声明函数类型别名
+typedef Compare = int Function(Object a, Object b);
 
-class CompareCollection {
-  Compare<int> compare;
+class CompareSortedCollection {
+  Compare compare;
 
-  CompareCollection(this.compare);
+  CompareSortedCollection(this.compare);
+}
+
+//Dart 提供了使用泛型去检查任何函数类型
+typedef CompareT<T> = int Function(T a, T b);
+
+int sortInt(int a, int b) => 0;
+
+//也可以直接声明函数类型别名(别名首字母建议大写)
+typedef void Hello<T>(T text);
+
+void toast(String text){
+  print("toast:$text");
 }

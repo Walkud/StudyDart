@@ -5,7 +5,10 @@ import 'annotations/Todo.dart';
 ///在Dart中 @deprecated 和 @override 注解是可用的，也可以自定义注解
 /// @deprecated 弃用
 /// @override 重写
-main() {}
+main() {
+  var tel = Television();
+  tel.activate();
+}
 
 class Television {
   /// _Deprecated: Use [turnOn] instead._
