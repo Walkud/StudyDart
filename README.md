@@ -93,7 +93,15 @@
 	* 多行注释 ( Multi-line comments )
 	* 文档注释 ( Documentation comments )
 
-	
+
+经过近三个月的学习，终于把 Dart 概览部分学习完成并记录形成自己的东西，为自己点赞。
+
 ## 参考
 
+[Dart 消息循环机制（官网）](https://dart.dev/articles/archive/event-loop)
+
+[Dart 消息循环机制（翻译）](https://www.jianshu.com/p/7549b63a72d7)
+
 [Dart 语言的介绍 (可大致了解 Dart由来)](https://www.yoytang.com/dart-intro.html)
+
+[Future简单科普](https://segmentfault.com/a/1190000014396421)
